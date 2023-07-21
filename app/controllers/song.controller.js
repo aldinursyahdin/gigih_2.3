@@ -15,6 +15,17 @@ exports.findAll = (req, res) => {
     Song.find()
         .then(data => {
 
+            res.send(data)
+
+
+        })
+        .catch(err => res.status(500).send({ message: err.message }));
+}
+
+exports.sortAll = (req, res) => {
+    Song.find()
+        .then(data => {
+
             res.send(data.sort((a, b) => b.playCount - a.playCount))
 
 
