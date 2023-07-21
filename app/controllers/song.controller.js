@@ -41,6 +41,7 @@ exports.playSong = (req, res) => {
             res.send({
                 message: `Lagu diputar `,
                 url: `${data.url}`,
+                playCount: `${data.playCount}`,
             })
 
 
