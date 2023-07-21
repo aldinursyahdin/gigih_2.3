@@ -22,8 +22,11 @@ Attributes: Title, Artists (can have multiple artist), URL (from spotify URL)
 
 ## Request Body Format
 Song model :
+
+```json
 {
     "tittle": "Where She Goes",
     "artists": ["Bad Bunny"],
     "url": "https://open.spotify.com/track/7ro0hRteUMfnOioTFI5TG1"
 }
+```
